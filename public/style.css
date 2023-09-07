@@ -1,0 +1,58 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px; /* Aumente a margem inferior para mais espaço entre o cabeçalho e o formulário */
+}
+
+/* Estilo do formulário */
+form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+/* Estilo para rótulos */
+.label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Estilo para campos de entrada */
+.input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /
+}
+
+/* Estilo para o botão de envio */
+.button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilize os links de maneira uniforme */
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Altere a cor do link ao pairar sobre ele */
+a:hover {
+    color: #666;
+}
