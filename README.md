@@ -26,8 +26,4 @@ Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando 
 <linha de comando>
 ```
 
-## :soon: Implementação futura
-
--   O que será implementado na próxima sprint?
-
 ## :dart: Status do projeto
