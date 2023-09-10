@@ -1,9 +1,33 @@
-# README - Importação de Dados de Frete a partir de um Arquivo CSV
+<h1 align="center">:file_cabinet: Exemplo de README.md</h1>
 
-Este é um script PHP que permite importar dados de frete de um arquivo CSV para um banco de dados MySQL. Ele foi desenvolvido com as seguintes tecnologias: PHP, MySQL.
+## :memo: Descrição
 
-# Uso
+Este projeto tem o objetovo de receber uma tabela me CVS, e então salvar os dados em um bando de dados.
 
-Para utilizar o script, basta seguir os seguintes passos:
+## :books: Funcionalidades
 
-execute o comando abaixo para clonar o repositório:
+-   <b>Index.html </b>: Página inicial do projeto.
+-   <b>style.css </b>: Arquivo de estilização da página.
+-   <b>server.php </b>: Arquivo que recebe os dados do formulário e salva no banco de dados. (de forma manual)
+-   <b>process_csv.php </b>: Tentativa de receber os dados do formulário e salvar no banco de dados. (de forma automática)
+
+## :wrench: Tecnologias utilizadas
+
+-   HTML
+-   CSS
+-   PHP
+-   Laravel
+
+## :rocket: Rodando o projeto
+
+Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando para iniciar o projeto:
+
+```
+<linha de comando>
+```
+
+## :soon: Implementação futura
+
+-   O que será implementado na próxima sprint?
+
+## :dart: Status do projeto
