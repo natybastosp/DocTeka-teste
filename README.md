@@ -1,4 +1,4 @@
-<h1 align="center">:file: README.md</h1>
+<h1 align="center">:file_cabinet:README.md</h1>
 
 ## :memo: Descrição
 
@@ -6,9 +6,29 @@ Este projeto tem o objetovo de receber uma tabela me CSV, e então salvar os dad
 
 ## :books: Funcionalidades
 
--   <b>Index.html </b>: Página inicial do projeto.
--   <b>style.css </b>: Arquivo de estilização da página.
--   <b>server.php </b>: Arquivo que recebe os dados do formulário e salva no banco de dados. (de forma manual)
+-   <b>Index.html </b>: Página inicial do projeto. Está pagina utiliza HTML e CSS para a estilização. Nela temos um formulário que recebe os dados do usuário e os envia para o arquivo process_csv.php.
+
+-   <b>style.css </b>: Arquivo de estilização da página.Utiliza CSS para a estilização do index.html.
+
+-   <b>server.php </b>: Arquivo que recebe os dados do formulário e salva no banco de dados. (de forma manual). Caractereisticas do codigo:
+
+    -   Define as configurações do banco de dados, incluindo o host, nome do banco de dados, nome de usuário e senha.
+
+    -   Especifica o caminho para um arquivo CSV que será lido e processado.
+    -   Tenta estabelecer uma conexão com o banco de dados MySQL usando as configurações fornecidas.
+    -   Configura o tratamento de erros para que as exceções sejam lançadas em caso de problemas.
+    -   Abre o arquivo CSV para leitura.
+    -   Define o delimitador de campo para vírgula.
+    -   Pula a primeira linha do arquivo CSV, que é geralmente o cabeçalho.
+    -   Substitui vírgulas por pontos nos valores do peso e do custo para garantir que sejam números -cimais válidos.
+    -   Exibe os dados extraídos para cada linha do CSV.
+
+    -   Cria uma consulta SQL para inserir os dados no banco de dados na tabela "frete".
+    -   Prepara e executa a consulta SQL usando o PDO (PHP Data Objects).
+    -   Fecha o arquivo CSV após concluir a leitura e inserção de dados.
+    -   Se tudo correr bem, exibe uma mensagem indicando que os dados do arquivo CSV foram inseridos no banco de dados.
+    -   Em caso de erro, mostra uma mensagem de erro com informações detalhadas sobre o problema.
+
 -   <b>process_csv.php </b>: Tentativa de receber os dados do formulário e salvar no banco de dados. (de forma automática)
 
 ## :wrench: Tecnologias utilizadas

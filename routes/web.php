@@ -1,18 +1,19 @@
-<?php
+Route::get('/frete', function () {
+try {
+$host = 'localhost';
+$dbname = 'pricetable';
+$username = 'naty';
+$password = 'naty123';
 
-use Illuminate\Support\Facades\Route;
+$pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+$query = "SELECT * FROM frete";
+$stmt = $pdo->query($query);
+$freteData = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-Route::get('/', function () {
-    return view('welcome');
+return view('frete.index', ['freteData' => $freteData]);
+} catch (PDOException $e) {
+die("Erro na execução: " . $e->getMessage());
+}
 });
