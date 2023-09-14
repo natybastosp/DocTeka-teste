@@ -30,6 +30,10 @@ Este projeto tem o objetovo de receber uma tabela me CSV, e então salvar os dad
     -   Em caso de erro, mostra uma mensagem de erro com informações detalhadas sobre o problema.
 
 -   <b>process_csv.php </b>: Tentativa de receber os dados do formulário e salvar no banco de dados. (de forma automática)
+    -   Recebe o arquivo CSV, vindo do fomulario do index.html e salva em uma variável.
+    -   Define as configurações do banco de dados, incluindo o host, nome do banco de dados, nome de usuário e senha.
+    -   Tenta estabelecer uma conexão com o banco de dados MySQL usando as configurações fornecidas.
+    -   Seu comportamento se assemelha ao do server.php, porém não foi possível fazer a conexão com o banco de dados.
 
 ## :wrench: Tecnologias utilizadas
 
@@ -38,6 +42,7 @@ Este projeto tem o objetovo de receber uma tabela me CSV, e então salvar os dad
 -   PHP
 -   Laravel
 -   MYSQL
+-   Vue.js
 
 ## :rocket: Rodando o projeto
 

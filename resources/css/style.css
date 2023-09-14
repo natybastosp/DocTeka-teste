@@ -56,3 +56,9 @@ a {
 a:hover {
     color: #666;
 }
+
+/* Estilo da tabela */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
