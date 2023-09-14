@@ -42,7 +42,6 @@ Este projeto tem o objetovo de receber uma tabela me CSV, e então salvar os dad
 -   PHP
 -   Laravel
 -   MYSQL
--   Vue.js
 
 ## :rocket: Rodando o projeto
 
